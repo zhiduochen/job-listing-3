@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Job Listing</title>
+    <title>Veritas Lab</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -11,12 +11,13 @@
   <body>
 
     <div class="container-fluid">
-      <%= render "common/navbar" %>
+      <div class="row">
+        <%= render "common/navbar" %>
+      </div>
       <%= render "common/flashes" %>
     <%= yield %>
   </div>
 
   <%= render "common/footer" %>
-  
   </body>
 </html>
